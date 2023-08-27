@@ -53,4 +53,10 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="issorted" value="boolean isSorted = IntStream.range(1, $LIST$.size())&#10;                        .allMatch(i -&gt; $LIST$.get(i) &gt;= $LIST$.get(i - 1));" description="Check a list of integer is sorted or not" toReformat="false" toShortenFQNames="true">
+    <variable name="LIST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
